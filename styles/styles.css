@@ -342,6 +342,7 @@ footer img.rs {
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
+    text-align: center;
 }
 
 .contactar a {
@@ -396,11 +397,14 @@ footer img.rs {
     padding: 1em;
     margin: 1rem;
     border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
 }
 
 .img-intro {
     height: auto;
-    width: 720px;
+    max-width: 100%;
 }
 
 .intro-beneficios {
@@ -408,6 +412,8 @@ footer img.rs {
     padding: 1rem;
     margin: 1rem;
     border-radius: 10px;
+    min-width: 479px;
+    width: 100%;
     text-align: center;
 }
 
@@ -439,6 +445,46 @@ footer img.rs {
     background-color: rgb(232, 238, 238);
     border-radius: 1rem;
 }
+
+.conteiner-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 100%;
+    background-color: rgb(232, 238, 238);
+    border-radius: 1rem;
+    line-height: 1.6;
+}
+
+.ejercicios-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.titulos-ejercicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    margin: 1rem;
+    padding: 10px;
+    background-color: rgb(232, 238, 238);
+}
+
+
+
+
+
+
 
 
 
