@@ -161,12 +161,12 @@ list-style-position: inside;
 }
 
 
-footer img.rs {
+footer img.redes {
     width: 30px;
     height: 30px;
 } 
 
-.rs:hover {
+.redes:hover {
     transform: scale(1.1);
 }
 
