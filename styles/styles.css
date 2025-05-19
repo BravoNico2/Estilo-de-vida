@@ -616,7 +616,7 @@ footer img.redes {
 }
 
 .mapa {
-    height: 35vh;
+    height: auto;
     max-width: 100%;
 }
 
@@ -716,7 +716,7 @@ footer img.redes {
 }
 
 /* PAGINA COMIDAS SALUDABLES */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 /* Ajustes generales de layout */
   .grid-layout {
     display: flex;
