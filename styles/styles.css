@@ -4,29 +4,22 @@
     box-sizing: border-box;
 }
 
-/* PAGINA CON FLEXBOX */
+/* PAGINA INICIO CON FLEXBOX */
 .header-flex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #2e9173;
     padding: 1rem 2rem;
-    flex-wrap: wrap;
     margin: 2px;
+    gap: 1rem;
 }
 
 /* BORDE DEL HEADER */
 .margen-color {
     background-color: #377e73;
-    padding: 1px;
-}
-
-.header-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0.5rem;
-    color: white;
+    padding: 2px;
 }
 
 .logo {
@@ -38,15 +31,8 @@
     transform: scale(1.1);
 }
 
-.header-nav {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
 .header-nav a {
     color: #6fd8b1;
-    text-decoration: none;
     font-weight: bold;
 }
 
@@ -55,7 +41,7 @@
     text-decoration: underline;
 }
 
-nav ul {
+.header-nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -68,7 +54,6 @@ nav ul {
     line-height: 1.6;
 } 
 
-
 .main-inicio {
     max-width: 100vw;
     margin: 0px auto;
@@ -80,29 +65,32 @@ h1 {
     color: #2c3e50;
 }
 
-h2{
-    color: #0c4933;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-}
-
 .contenedor-flex {
     display: flex;
-    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
     gap: 1rem;
+    margin: auto;
     background-color: rgb(152, 185, 146);
 }
 
-.img1 {
-    height: 300px;
-    width: 730px;
-    border-radius: 5px;
-}
 
 .texto {
-    right: 10px;
-    margin-top: 18px;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(232, 238, 238);
+    border-radius: 1rem;
+}
+
+.img1 {
+    height: auto;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
 .texto ul {
@@ -111,14 +99,17 @@ h2{
 
 .cards-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1.5rem;
     padding: 2rem;
-    flex-wrap: wrap;
+    margin: 1rem;
+    background-color: rgb(232, 238, 238);
+    border-radius: 1rem;
 }
 
 .card {
-    flex: 0 0 300px;
+    flex: 0 0 500px;
     padding: 2rem;
     background-color: rgb(152, 185, 146);
     border-radius: 10px;
@@ -132,17 +123,33 @@ h2{
 
 .contenedor-flex2 {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     gap: 2rem;
     background-color: rgb(152, 185, 146);
     border-radius: 5px;
     padding: 10px;
-    margin-left: 25px;
+    margin: 1rem;
 }
 
 .texto2 {
     flex: 1;
+    background-color: rgb(232, 238, 238);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.texto2 a {
+    text-decoration: none;
+    color: #473ce2;
+}
+
+.texto2 a:hover {
+    color: #333;
+    text-decoration: underline;
 }
 
 .texto2 ul{
@@ -152,12 +159,13 @@ list-style-position: inside;
 }
 
 .flex-footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
     background-color: #2e9173;
     padding: 20px;
     gap: 10px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -176,7 +184,7 @@ footer img.redes {
     padding: 4px;
 }
 
-/* PAGINA CON GRID */
+/* PAGE COMIDAS SALUDABLES CON GRID */
 .grid-layout {
     display: grid;
     grid-template-areas:
@@ -203,31 +211,30 @@ footer img.redes {
     padding: 1rem 2rem;
 }
 
-/* BORDE DEL HEADER */
-
-.margen-color2 {
-    background-color: #377e73;
-    padding: 3px;
-}
-
-.logo {
-    display: grid;
+/* HEADER CON GRID */
+.logo-comidas {
     grid-area: logo;
+    max-width: 100%;
+    height: auto;
 }
 
-.titulo {
-    display: grid;
+.titulo-comidas {
     grid-area: titulo;
 }
 
-.menu {
-    display: grid;
+.menu-comidas {
     grid-area: menu;
 }
 
+.nav-grid {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
 .nav-grid a{
-    text-decoration: none;
-    color: #6fd8b1;
+    color:#6fd8b1;
     font-weight: bold;
 }
 
@@ -252,9 +259,9 @@ footer img.redes {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
     gap: 2rem;
-    padding: 20px;
-    margin-top: 2rem;
+    padding: 10px;
     background-color: rgb(152, 185, 146);
+    line-height: 1.6;
 }
 
 .img-plato {
@@ -294,6 +301,7 @@ footer img.redes {
     line-height: 1.6;
     border-radius: 1rem;
     margin: 2rem;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .texto-alimentacion {
@@ -323,11 +331,13 @@ footer img.redes {
 .texto-dieta {
     max-width: 800px;
     text-align: left;
+    order: 1;
 }
 
 .imagen-dieta {
     max-width: 100%;
     height: auto;
+    order: 2;
 }
 
 .contactar {
@@ -345,40 +355,73 @@ footer img.redes {
     text-align: center;
 }
 
-.contactar a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.contactar a:hover {
-    text-decoration: underline;
-    color: aliceblue;
-}
-
 .footer-grid {
     grid-area: footer;
     background-color: #2e9173;
     padding: 1rem;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
-
-.borde-footer2 {
-    background-color: #377e73;
-    padding: 4px;
-}
-
-/* PAGINA DE QUIENES SOMOS */
-.contacto {
-    background-color: #6a867931;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10px;
-    height: auto;
-    max-width: 100%;
-}
 
 /* PAGINA TIPOS DE EJERCICIOS */
+.layout-ejercicios {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+} 
+
+.header-ejercicios {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+    "logo titulo menu";
+    justify-items: center;
+    align-items: center;
+    background-color: #2e9173;
+    padding: 1rem 2rem;
+}
+
+.logo-ejercicios {
+    grid-area: logo;
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo-ejercicios {
+    grid-area: titulo;
+}
+
+.menu-ejercicios {
+    grid-area: menu;
+}
+
+.nav-ejercicios {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-ejercicios a{
+    color:#6fd8b1;
+    font-weight: bold;
+}
+
+.nav-ejercicios a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 
 .intro-entrenamientos {
     display: grid;
@@ -446,7 +489,7 @@ footer img.redes {
     border-radius: 1rem;
 }
 
-.conteiner-card {
+.container-card {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -480,195 +523,299 @@ footer img.redes {
     background-color: rgb(232, 238, 238);
 }
 
-
-
-
-
-
-
-
-
-/* .cards-container {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1.5rem;
-    padding: 2rem;
-    flex-wrap: wrap;
-}
-
-.card {
-    flex: 0 0 300px;
-    padding: 2rem;
-    background-color: rgb(152, 185, 146);
-    border-radius: 10px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 480px) {
-    header {
-        font-size: 16px;
-        padding: 10px;
-    }
-}
-/* 
-
-section {
-    margin-bottom: 40px;
-}
-
-
-p {
-    margin-bottom: 15px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-.cs2 {
-    max-width: 800px;
-}
-footer {
-    background-color: #2c3e50;
-    color: white;
+.footer-ejercicios {
+    grid-area: footer;
+    background-color: #2e9173;
+    padding: 1rem;
     text-align: center;
-    padding: 25px 10px;
-    margin-top: 40px;
+    font-family: 'Quicksand', sans-serif;
 }
-footer h2 {
-    margin-bottom: 15px;
+
+/* PAGINA DE QUIENES SOMOS */
+.contacto {
+    background-color: #6a867931;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    height: auto;
+    max-width: 100%;
 }
-footer a {
-    margin: 0 10px;
-    display: inline-block;
+
+/* PAGINA UBICACION */
+.grid-ubicacion {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+} 
+
+.header-ubicacion {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+    "logo titulo menu";
+    justify-items: center;
+    align-items: center;
+    background-color: #2e9173;
+    padding: 1rem 2rem;
 }
-.rs {
-    width: 30px;
-    transition: 0.3s ease;
+
+/* HEADER CON GRID */
+.logo-ubicacion {
+    grid-area: logo;
+    max-width: 100%;
+    height: auto;
 }
-.rs:hover {
-    transform: scale(1.1);
+
+.titulo-ubicacion {
+    grid-area: titulo;
 }
-@media (max-width: 768px) {
-    nav ul {
+
+.menu-ubicacion {
+    grid-area: menu;
+}
+
+.nav-ubicacion {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-ubicacion a{
+    color:#6fd8b1;
+    font-weight: bold;
+}
+
+.nav-ubicacion a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.ubicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items:right;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    line-height: 1.6;
+    background-color: rgb(232, 238, 238);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.mapa {
+    height: 35vh;
+    max-width: 100%;
+}
+
+.texto-ubicacion {
+    background-color: rgb(152, 185, 146);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.form-reclamos {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(232, 238, 238);
+    border-radius: 1rem;
+}
+
+/* ESTILO PARA LOS TITULOS */
+.titulos {
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(232, 238, 238);
+    border-radius: 1rem;
+    color: #0c4933;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ESTILO PARA TODOS LOS LINKS */
+.links {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+/* MEDIA QUERYS INICIO */
+@media (max-width: 1024px) {
+    .header-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .header-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .header-nav a {
+        font-size: 0.9rem;
+        padding: 0.2rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+    }
+
+    .cards-container {
         flex-direction: column;
         align-items: center;
     }
 
-    #logo {
-        position: static;
-        margin-bottom: 15px;
+    .card {
+        flex: 1 1 auto;
+        width: 90%;
     }
 
-    header h1 {
-        font-size: 2em;
+    .contenedor-flex2 {
+        flex-direction: column;
     }
 
-    .cs2 {
+    .img2 {
         width: 100%;
     }
-} */
 
-/* /* RESET BÁSICO */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    .texto2 {
+        width: 90%;
+    }
+
+    .flex-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-nav a {
+        font-size: 1rem;
+    }
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #507c73;
-    color: #333;
-} */
+/* PAGINA COMIDAS SALUDABLES */
+@media (max-width: 768px) {
+/* Ajustes generales de layout */
+  .grid-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 
-/* HEADER con FLEX */
-/* header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    border-bottom: 2px solid #ddd;
+/* Header y navegación */
+  .header-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .menu-comidas nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .menu-comidas nav ul li {
+    margin: 0;
+    list-style: none;
+  }
+
+/* Imagen del plato saludable */
+  .img-plato, .img-alimentacion, {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+  }
+
+/* Video responsivo */
+  .video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+/* seccipnes y texto */
+  .contenido-grid,
+  .contenido-video,
+  .contenido-alimentacion-eq, {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .texto-video,
+  .texto-dieta {
+    width: 100%;
+  }
+
+  .img-dieta {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .footer-grid {
+    text-align: center;
+    padding: 1rem;
+  }
+
+    .contenido-dieta {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .texto-dieta {
+        max-width: 100%;
+        text-align: center;
+        order: 1;
+    }
+
+    .imagen-dieta {
+        max-width: 100%;
+        margin-top: 1rem;
+        order: 2;
+    }
 }
 
-header a .Logo {
-    width: 80px;
-    height: auto;
-}
-
-nav ul {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-header h1 {
-    font-size: 24px;
-} */
-
-/* MAIN con GRID */
-/* main {
-    display: grid;
+/* MEDIA QUERYS PAGINA UBICACION */
+@media (max-width: 768px) {
+    .ubicacion {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px;
+    justify-items: center;
+    text-align: center;
 }
 
-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-section img {
+    .mapa {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 10px 0;
-} */
+    height: 250px;
+}
 
-/* FOOTER con FLEX */ 
-/*     footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-} */
-
-
-/* RESPONSIVE GRID  */
-/*     @media (min-width: 768px) {
-    main {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    section:nth-child(3) {
-        grid-column: span 2;
-    }
-} 
- */
+.texto-ubicacion {
+    margin: 0;
+}
+}
