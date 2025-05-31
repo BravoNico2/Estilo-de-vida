@@ -539,15 +539,33 @@ h1 {
   font-family: "Poppins", sans-serif;
   color: #333;
 }
+@media (max-width: 768px) {
+  .ubicacion {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+}
 .ubicacion .texto-ubicacion {
   background-color: rgb(152, 185, 146);
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem;
 }
+@media (max-width: 768px) {
+  .ubicacion .texto-ubicacion {
+    margin: 0;
+  }
+}
 .ubicacion .mapa {
   height: auto;
   max-width: 100%;
+}
+@media (max-width: 768px) {
+  .ubicacion .mapa {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .form-reclamos {
@@ -591,4 +609,4 @@ h1 {
   font-family: "Quicksand", sans-serif;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */

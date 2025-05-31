@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-inicio {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* BODY PAG COMIDAS SALUDABLES*/
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* BODY PAGINA TIPO DE EJERCICIOS */
+.layout-ejercicios {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+} 
+
+/* BODY PAGINA UBICACION */
+.grid-ubicacion {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+} 
+
+/* ESTILO DE LOS TITULOS */
+.titulos {
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(232, 238, 238);
+    border-radius: 1rem;
+    color: #0c4933;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ESTILO PARA TODOS LOS LINKS */
+.links {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+.links:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    color: #2c3e50;
+}
+
+.logo {
+    width: 90;
+    height: 70px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* BORDE DE LOS HEADERS */
+.margen-color {
+    background-color: #377e73;
+    padding: 2px;
+}
+
+/* BORDE DE LOS FOOTERS */
+.borde-footer {
+    background-color: #377e73;
+    padding: 4px;
+}
+/* redes sociales */
+.redes {
+    max-width: 35px;
+    height: auto;
+}
+.redes:hover {
+    transform: scale(1.1);
+}
+
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+

@@ -1,0 +1,43 @@
+.ubicacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items:right;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    line-height: 1.6;
+    background-color: rgb(232, 238, 238);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    @include mobile{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    .texto-ubicacion {
+        background-color: rgb(152, 185, 146);
+        border-radius: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+        @include mobile{
+            margin: 0;
+        }
+    }
+    .mapa {
+        height: auto;
+        max-width: 100%;
+        @include mobile{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.form-reclamos {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(232, 238, 238);
+    border-radius: 1rem;
+}

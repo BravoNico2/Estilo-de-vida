@@ -1,0 +1,31 @@
+/* footer con flex inicio*/
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2e9173;
+    padding: 20px;
+    gap: 10px;
+    font-family: 'Quicksand', sans-serif;
+    @include mobile{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* footer con grid comidas-saludables */
+.footer-grid {
+    grid-area: footer;
+    background-color: #2e9173;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* pagina ejercicios */
+.footer-ejercicios {
+    grid-area: footer;
+    background-color: #2e9173;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
