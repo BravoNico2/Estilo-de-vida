@@ -38,6 +38,10 @@
     background-color: rgb(152, 185, 146);
     .texto-video {
         font-size: 1rem;
+        background-color: #E8EEEE;
+        padding: 1rem;
+        margin: auto;
+        border-radius: 1rem;
     }
     .contenido-video iframe {
         white-space: 100%;
@@ -79,8 +83,9 @@
 
 .contenido-dieta {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
+    justify-items: center;
     gap: 1rem;
     padding: 2rem;
     margin: 2rem;
@@ -89,21 +94,19 @@
     background-color: rgb(152, 185, 146);
     .texto-dieta {
         max-width: 800px;
-        text-align: left;
-        order: 1;
+        background-color: #E8EEEE;
+        padding: 1rem;
+        margin: auto;
+        border-radius: 1rem;
     }
     .imagen-dieta {
         max-width: 100%;
         height: auto;
-        order: 2;
     }
     @include mobile{
         grid-template-columns: 1fr;
         padding: 1rem;
         margin: 1rem;
-        .texto-dieta, .imagen-dieta{
-            order: unset;
-        }
     }
 }
 
