@@ -41,6 +41,16 @@
     line-height: 1.6;
 } 
 
+.body-contacto {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 /* BODY PAGINA UBICACION */
 .grid-ubicacion {
     display: grid;
